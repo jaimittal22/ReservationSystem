@@ -4,6 +4,7 @@ public class ReservationSystem {
         ReservationSystem jarvis = new ReservationSystem();
     }
 
+    Reservation [] reservations = new Reservation[10];
     public ReservationSystem(){
         Reservation gavin = new Reservation(4, 2.00, 1000, 1);
         gavin.print();
@@ -11,7 +12,7 @@ public class ReservationSystem {
         Reservation dog = new Reservation(4, 8, 645, 1);
         dog.print();
 
-        Reservation [] reservations = new Reservation[10];
+
         reservations[0] = gavin;
         reservations[1] = dog;
         reservations[1].print();
@@ -21,14 +22,14 @@ public class ReservationSystem {
             reservations[x] = new Reservation(7, 7.00,6 , 2);
                     reservations[x].print();
         }
-        public void addReservation (int numPeople, double time, int priority, long timeMade){
-            reservations[reservationsMade] = new Reservation(numPeople, time, priority, timeMade);
-            reservationsMade++;
+
         }
-        public void displayReservations(){
-            for (int i=0;i<reservations.length;i++){
-                reservations[i].makeString();
-            }
+    public void addReservation (int numPeople, double time, long timeMade, int priority){
+        reservations[5] = new Reservation(numPeople, time, timeMade, priority);
+    }
+    public void displayReservations(){
+        for (int i=0;i<reservations.length;i++){
+            reservations[i].makeString();
         }
 // add reservation, display reservation method
     }

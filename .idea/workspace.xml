@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de296f14-17b9-4c06-9b2c-67134b71d9cb" name="Changes" comment="">
+    <list default="true" id="de296f14-17b9-4c06-9b2c-67134b71d9cb" name="Changes" comment="added add reservation method and display reservation method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReservationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,14 @@
       <option name="presentableId" value="Default" />
       <updated>1696531640331</updated>
     </task>
+    <task id="LOCAL-00001" summary="added add reservation method and display reservation method">
+      <created>1697218003943</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697218003943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -58,5 +68,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added add reservation method and display reservation method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added add reservation method and display reservation method" />
   </component>
 </project>
