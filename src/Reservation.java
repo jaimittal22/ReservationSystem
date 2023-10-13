@@ -17,8 +17,6 @@ public class Reservation {
     public void print(){
         System.out.println("Reservation for " + numPeople + " people at "+ time+ " made at "+ timeMade + " with priority "+ priority);
     }
-    public void makeString(){
 
-    }
 }
 
