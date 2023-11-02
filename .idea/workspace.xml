@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de296f14-17b9-4c06-9b2c-67134b71d9cb" name="Changes" comment="made changes">
+    <list default="true" id="de296f14-17b9-4c06-9b2c-67134b71d9cb" name="Changes" comment="Sort method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReservationSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698244518515</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Sort method">
+      <created>1698247769080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698247769080</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,7 +100,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added add reservation method and display reservation method" />
     <MESSAGE value="made changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="made changes" />
+    <MESSAGE value="Sort method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sort method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,12 +2,12 @@ public class Reservation {
     //this will help me make reservation objects
     public int numPeople;
     public double time;
-    public int priority;
+    public long priority;
     long timeMade;
     //helpful for finding current time
     //System.currentTimeMillis
 
-    public Reservation(int pnumPeople, double ptime, long ptimeMade, int ppriority){
+    public Reservation(int pnumPeople, double ptime, long ptimeMade, long ppriority){
             numPeople = pnumPeople;
             time = ptime;
             timeMade = ptimeMade;

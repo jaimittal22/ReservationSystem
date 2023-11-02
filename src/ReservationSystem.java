@@ -24,20 +24,62 @@ public class ReservationSystem {
         //    for(int x = 3; x < 10; x++){
         //       reservations[x] = new Reservation(7, 7.00,6 , 2);
         //               reservations[x].print();
-        addReservation(5, 5.30, 8300, 3);
-        displayReservations();
-        SelectionSort();
-        Sort();
-        Scanner scan = new Scanner(System.in);
-        System.out.println("what is your name?");
-        String name = scan.nextLine();
-        System.out.println("hello" + name + "!");
-        // displayReservations();
+        //addReservation(5, 5.30, 8300, 3);
+        //displayReservations();
+       // SelectionSort();
+      //  Sort();
+        boolean continueee = true;
+        while(continueee ==true) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("what is your name?");
+            String name = scan.nextLine();
+            System.out.println("hello " + name + "!");
+            System.out.println("How can I help you today?");
+            System.out.println("Press 1 to make a reservation");
+            System.out.println("Press 2 to view a reservation");
+            System.out.println("Press 3 to sort reservations");
+            String choice = scan.nextLine();
+            boolean isfull = true;
+            for (int x = 0; x < reservations.length; x++) {
+                if (reservations[x] == null) {
+                    isfull = false;
+                }
+            }
+            if (choice.equals("1")) {
+                if (isfull == true) {
+                    System.out.println("We are not accepting reservations at this time.");
+                } else {
+                    System.out.println("How many people is the reservation for?");
+                    String numberpeople = scan.nextLine();
+                    System.out.println("What time is the reservation?");
+                    String time = scan.nextLine();
+                    addReservation(Integer.parseInt(numberpeople), Double.parseDouble(time), System.currentTimeMillis(), System.currentTimeMillis());
+                }
+            }
+            if (choice.equals("2")) {
+                displayReservations();
+            }
+            if (choice.equals("3")){
+            Sort();
+            displayReservations();
+            }
+            System.out.println("Is there anything else I can help with?");
+
+            String choices = scan.nextLine();
+
+            if (choices.equals("Yes")) {
+                continueee = true;
+            }
+
+            if (choices.equals("No")){
+                continueee = false;
+                System.out.println("Thank you!");
+            }
+
+        }
 
     }
-
-
-    public void addReservation(int numPeople, double time, long timeMade, int priority) {
+    public void addReservation(int numPeople, double time, long timeMade, long priority) {
         Reservation chair = new Reservation(numPeople, time, timeMade, priority);
         for (int x = 0; x < reservations.length; x++) {
             if (reservations[x] == null) {
