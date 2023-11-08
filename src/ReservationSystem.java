@@ -38,6 +38,7 @@ public class ReservationSystem {
             System.out.println("Press 1 to make a reservation");
             System.out.println("Press 2 to view a reservation");
             System.out.println("Press 3 to sort reservations");
+            System.out.println("Press 4 to cancel a reservation");
             String choice = scan.nextLine();
             boolean isfull = true;
             for (int x = 0; x < reservations.length; x++) {
@@ -63,6 +64,23 @@ public class ReservationSystem {
             Sort();
             displayReservations();
             }
+            if (choice.equals("4")){
+                displayReservations();
+                System.out.print("Enter your reservation number to cancel the reservation: ");
+                String resNum = scan.nextLine();
+                int num = Integer.parseInt(resNum);
+            //    for (int i = 0; i < reservations.length; i++) {
+                    if (reservations[num] != null ) {
+                        reservations[num] = null;
+                        System.out.println("Reservation " + resNum + " canceled.");
+
+                    }
+                    else{
+                        System.out.print("Reservation could not be found ");
+                    }
+                //}
+            }
+
             System.out.println("Is there anything else I can help with?");
 
             String choices = scan.nextLine();
@@ -152,6 +170,7 @@ public class ReservationSystem {
                         System.out.println("Reservation does not exist");
                     }
                     else{
+                        System.out.print(x+ ": ");
                         reservations[x].print();
                     }
                 }
